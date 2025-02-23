@@ -26,3 +26,10 @@ train_set = OxfordIIITPet(root="pets_data", split="trainval", target_types="segm
 
 test_set = OxfordIIITPet(root="pets_data", split="test", target_types="segmentation",
                             download=True, transform=transform, target_transform=target_transform)
+
+batch_size = 64
+num_workers = 28
+train_loader = DataLoader(train_set, num_workers=num_workers, batch_size=batch_size, shuffle=True)
+test_loader = DataLoader(test_set, num_workers=num_workers, batch_size=batch_size, shuffle=True)
+
+
