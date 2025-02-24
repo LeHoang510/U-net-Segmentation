@@ -4,6 +4,9 @@ from torch.utils.data import DataLoader
 import torch
 import numpy as np
 
+from utils.utils import *
+
+set_seed(555)
 img_size = (128, 128)
 num_classes = 3
 
@@ -14,12 +17,6 @@ transform = transforms.Compose([
                             std=[0.229, 0.224, 0.225])
 ])
 
-def target_transform(target):
-    img = transforms.Resize(img_size)(target)
-    img = transforms.functional.pil_to_tensor(img).squeeze()
-    img = img-1
-    img = img.to(torch.long)
-    return img
 
 train_set = OxfordIIITPet(root="pets_data", split="trainval", target_types="segmentation", 
                           download=True, transform=transform, target_transform=target_transform)
@@ -31,9 +28,3 @@ batch_size = 64
 num_workers = 28
 train_loader = DataLoader(train_set, num_workers=num_workers, batch_size=batch_size, shuffle=True)
 test_loader = DataLoader(test_set, num_workers=num_workers, batch_size=batch_size, shuffle=True)
-
-def de_normalize(img, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)):
-    result = img*std+mean
-    result = np.clip(result, 0, 1)
-    return result
-    
