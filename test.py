@@ -24,12 +24,17 @@ def test():
     test_set = OxfordIIITPet(root="pets_data", split="test", target_types="segmentation",
                                 download=True, transform=transform, target_transform=target_transform)
 
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print("Using device: ", device)
+
     model = UNet(n_channels=3, n_classes=num_classes)
     model.load_state_dict(torch.load(osp.join("output", "unet_model.pth")))
 
+    model.to(device)
+
     for i in range(10):
         img, gt = test_set[i]
-        display_prediction(model, img, gt, num_classes, img_size)
+        display_prediction(model, img, gt, device)
 
 
 if __name__ == "__main__":
