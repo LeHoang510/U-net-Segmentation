@@ -38,3 +38,4 @@ def evaluate(model, test_loader, criterion, device):
 	
 	test_loss = test_loss / len(test_loader)
 	return test_loss
+
