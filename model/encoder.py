@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from conv_block import ConvBlock
+from model.conv_block import ConvBlock
 
 class Encoder(nn.Module):
     def __init__(self, in_channels, out_channels):

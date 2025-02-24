@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 
-from conv_block import ConvBlock
-from encoder import Encoder
-from decoder import Decoder
+from model.conv_block import ConvBlock
+from model.encoder import Encoder
+from model.decoder import Decoder
 
 class UNet(nn.Module):
     def __init__(self, n_channels, n_classes):

@@ -5,6 +5,8 @@ import numpy as np
 import torch
 from torchvision import transforms
 
+from tqdm import tqdm
+
 def set_seed(seed: int = 555):
 	random.seed(seed)
 	np.random.seed(seed)
@@ -30,7 +32,7 @@ def evaluate(model, test_loader, criterion, device):
 	model.eval()
 	test_loss = 0.0
 	with torch.no_grad():
-		for inputs, labels in test_loader:
+		for i, (inputs, labels) in enumerate(tqdm(test_loader)):
 			inputs, labels = inputs.to(device), labels.to(device)
 			outputs = model(inputs)
 			loss = criterion(outputs, labels)

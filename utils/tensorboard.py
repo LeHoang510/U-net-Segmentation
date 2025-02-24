@@ -8,7 +8,7 @@ class Logger:
         self.writer = None
         self.log_dir = log_dir
 
-    def write_dict(self, epoch, total_epoch, train_loss, val_loss, val_acc, test_loss):
+    def write_dict(self, epoch, total_epoch, train_loss, val_loss=None, val_acc=None, test_loss=None):
         if self.writer is None:
             self.writer = SummaryWriter(log_dir=self.log_dir)
         

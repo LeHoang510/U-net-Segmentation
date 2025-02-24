@@ -6,6 +6,7 @@ from torch.utils.data import DataLoader
 import torch.nn as nn
 import torch
 import numpy as np
+from tqdm import tqdm
 
 from utils.utils import *
 from utils.tensorboard import Logger
@@ -32,15 +33,15 @@ def train():
     test_set = OxfordIIITPet(root="pets_data", split="test", target_types="segmentation",
                                 download=True, transform=transform, target_transform=target_transform)
 
-    batch_size = 64
-    num_workers = 28
+    batch_size = 32
+    num_workers = 4
     train_loader = DataLoader(train_set, num_workers=num_workers, batch_size=batch_size, shuffle=True)
     test_loader = DataLoader(test_set, num_workers=num_workers, batch_size=batch_size, shuffle=True)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("Using device: ", device)
 
-    model = UNet(num_classes=num_classes)
+    model = UNet(n_channels=3, n_classes=num_classes)
     model.to(device)
 
     logger = Logger(model, None, log_dir=osp.join("output", "unet_logs"))
@@ -62,7 +63,7 @@ def train():
     for epoch in range(max_epoch):
         model.train()
         running_loss = 0.0 
-        for inputs, labels in train_loader:
+        for i, (inputs, labels) in enumerate(tqdm(train_loader)):
             inputs, labels = inputs.to(device), labels.to(device)
             optimizer.zero_grad()
             outputs = model(inputs)
@@ -81,6 +82,14 @@ def train():
             best_model_wts = copy.deepcopy(model.state_dict())
         
         logger.write_dict(epoch+1, max_epoch, train_loss, test_loss=test_loss)
+        
+        del inputs, labels, outputs, loss
+        torch.cuda.empty_cache()
+
+    print("Best Loss: ", best_loss)
+    logger.close()
+    torch.save(best_model_wts, osp.join("output", "unet_model.pth"))
+    print("Model saved")
 
     return train_losses, test_losses
 
