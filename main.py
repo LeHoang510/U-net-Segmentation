@@ -2,7 +2,7 @@ from torchvision import transforms
 from torchvision.datasets import OxfordIIITPet
 from torch.utils.data import DataLoader
 import torch
-
+import numpy as np
 
 img_size = (128, 128)
 num_classes = 3
@@ -32,4 +32,8 @@ num_workers = 28
 train_loader = DataLoader(train_set, num_workers=num_workers, batch_size=batch_size, shuffle=True)
 test_loader = DataLoader(test_set, num_workers=num_workers, batch_size=batch_size, shuffle=True)
 
-
+def de_normalize(img, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)):
+    result = img*std+mean
+    result = np.clip(result, 0, 1)
+    return result
+    
