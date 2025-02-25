@@ -1,4 +1,9 @@
-# U-net-Segmentation
+# U-net Segmentation
+
+TODO
+
+# Project Overview
+This project focuses on building a U-Net model for image segmentation using the Oxford-IIIT Pet Dataset. 
 
 # TODO
 
