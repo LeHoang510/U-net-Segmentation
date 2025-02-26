@@ -39,7 +39,11 @@ The decoder restores the spatial resolution of the image while refining segmenta
 
 The decoder progressively reduces feature depth while increasing spatial resolution (1024 → 512 → 256 → 128 → 64).
 
-
+# Dataset
+- The dataset used is the Oxford-IIIT Pet Dataset: Link
+- It contains 37 pet breeds, with around 200 images per breed.
+- Each image has an annotation mask for segmentation, including three classes: pet, background, and boundary.
+- The dataset will be downloaded automatically by torchvision library
 
 # WILLDO
 
