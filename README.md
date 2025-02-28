@@ -45,7 +45,11 @@ The decoder progressively reduces feature depth while increasing spatial resolut
 - Each image has an annotation mask for segmentation, including three classes: pet, background, and boundary.
 - The dataset will be downloaded automatically by torchvision library
 
-# WILLDO
+# How to run
+
+```bash
+python main.py
+```
 
 # SOMEDO
 
