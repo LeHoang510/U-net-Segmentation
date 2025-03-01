@@ -47,9 +47,25 @@ The decoder progressively reduces feature depth while increasing spatial resolut
 
 # How to run
 
-```bash
-python main.py
-```
++ training
+
+    ```bash
+    python main.py
+    ```
+
++ tensorboard
+
+    ```bash
+    tensorboard --logdir=output/unet_logs
+    ```
+
+
+# Results
+
+-  Training results (train loss and test loss)
+
+![figure 1](/docs/training_result.png)
+
 
 # SOMEDO
 
