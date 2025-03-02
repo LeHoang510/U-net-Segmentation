@@ -82,12 +82,12 @@ The decoder progressively reduces feature depth while increasing spatial resolut
     ![Figure 6](/docs/result/Figure_6.png)
     - Figure 7
     ![Figure 7](/docs/result/Figure_7.png)
-
-![Figure 8](/docs/result/Figure_8.png)
-
-![Figure 9](/docs/result/Figure_9.png)
-
-![Figure 10](/docs/result/Figure_10.png)
+    - Figure 8
+    ![Figure 8](/docs/result/Figure_8.png)
+    - Figure 9
+    ![Figure 9](/docs/result/Figure_9.png)
+    - Figure 10
+    ![Figure 10](/docs/result/Figure_10.png)
 
 
 
