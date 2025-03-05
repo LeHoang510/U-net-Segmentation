@@ -73,8 +73,7 @@ For a detailed visualization of the training and test loss trends, refer to the 
 ---
 
 ## Visualizations
-The following figures provide insights into the experimental results. Figures are displayed in rows for better comparison:
-
+The following figures compare the **model predictions** against the **expected results**. Each row contains two figures for easy comparison:
 | | |
 |--------------|--------------|
 | ![Figure 1](/docs/result/Figure_1.png) | ![Figure 2](/docs/result/Figure_2.png) |
