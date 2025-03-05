@@ -83,10 +83,6 @@ The following figures compare the **model predictions** against the **expected r
 | ![Figure 9](/docs/result/Figure_9.png) | ![Figure 10](/docs/result/Figure_10.png) |
 
 
-# SOMEDO
+# Conclusion
 
-# WHYDO
-
-# MAYBEDO
-
-# NEXTDO
+# Future work
