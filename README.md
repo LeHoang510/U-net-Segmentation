@@ -75,12 +75,13 @@ For a detailed visualization of the training and test loss trends, refer to the 
 ## Visualizations
 The following figures provide insights into the experimental results. Figures are displayed in rows for better comparison:
 
-|  | | |
-|--------------|--------------|--------------|
-| ![Figure 1](/docs/result/Figure_1.png) | ![Figure 2](/docs/result/Figure_2.png) | ![Figure 3](/docs/result/Figure_3.png) |
-| ![Figure 4](/docs/result/Figure_4.png) | ![Figure 5](/docs/result/Figure_5.png) | ![Figure 6](/docs/result/Figure_6.png) |
-| ![Figure 7](/docs/result/Figure_7.png) | ![Figure 8](/docs/result/Figure_8.png) | ![Figure 9](/docs/result/Figure_9.png) | 
-|![Figure 10](/docs/result/Figure_10.png) |
+| | |
+|--------------|--------------|
+| ![Figure 1](/docs/result/Figure_1.png) | ![Figure 2](/docs/result/Figure_2.png) |
+| ![Figure 3](/docs/result/Figure_3.png) | ![Figure 4](/docs/result/Figure_4.png) | 
+| ![Figure 5](/docs/result/Figure_5.png) | ![Figure 6](/docs/result/Figure_6.png) |
+| ![Figure 7](/docs/result/Figure_7.png) | ![Figure 8](/docs/result/Figure_8.png) | 
+| ![Figure 9](/docs/result/Figure_9.png) | ![Figure 10](/docs/result/Figure_10.png) |
 
 
 # SOMEDO
