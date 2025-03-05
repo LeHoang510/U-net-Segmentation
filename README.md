@@ -75,62 +75,12 @@ For a detailed visualization of the training and test loss trends, refer to the 
 ## Visualizations
 The following figures provide insights into the experimental results. Figures are displayed in rows for better comparison:
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 1</strong>: [Description of Figure 1]</p>
-    <img src="/docs/result/Figure_1.png" alt="Figure 1" style="width: 100%;">
-  </div>
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 2</strong>: [Description of Figure 2]</p>
-    <img src="/docs/result/Figure_2.png" alt="Figure 2" style="width: 100%;">
-  </div>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 3</strong>: [Description of Figure 3]</p>
-    <img src="/docs/result/Figure_3.png" alt="Figure 3" style="width: 100%;">
-  </div>
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 4</strong>: [Description of Figure 4]</p>
-    <img src="/docs/result/Figure_4.png" alt="Figure 4" style="width: 100%;">
-  </div>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 5</strong>: [Description of Figure 5]</p>
-    <img src="/docs/result/Figure_5.png" alt="Figure 5" style="width: 100%;">
-  </div>
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 6</strong>: [Description of Figure 6]</p>
-    <img src="/docs/result/Figure_6.png" alt="Figure 6" style="width: 100%;">
-  </div>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 7</strong>: [Description of Figure 7]</p>
-    <img src="/docs/result/Figure_7.png" alt="Figure 7" style="width: 100%;">
-  </div>
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 8</strong>: [Description of Figure 8]</p>
-    <img src="/docs/result/Figure_8.png" alt="Figure 8" style="width: 100%;">
-  </div>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 9</strong>: [Description of Figure 9]</p>
-    <img src="/docs/result/Figure_9.png" alt="Figure 9" style="width: 100%;">
-  </div>
-  <div style="flex: 1 1 45%;">
-    <p><strong>Figure 10</strong>: [Description of Figure 10]</p>
-    <img src="/docs/result/Figure_10.png" alt="Figure 10" style="width: 100%;">
-  </div>
-</div>
-
-
+|  | | |
+|--------------|--------------|--------------|
+| ![Figure 1](/docs/result/Figure_1.png) | ![Figure 2](/docs/result/Figure_2.png) | ![Figure 3](/docs/result/Figure_3.png) |
+| ![Figure 4](/docs/result/Figure_4.png) | ![Figure 5](/docs/result/Figure_5.png) | ![Figure 6](/docs/result/Figure_6.png) |
+| ![Figure 7](/docs/result/Figure_7.png) | ![Figure 8](/docs/result/Figure_8.png) | ![Figure 9](/docs/result/Figure_9.png) | 
+|![Figure 10](/docs/result/Figure_10.png) |
 
 
 # SOMEDO
