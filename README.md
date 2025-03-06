@@ -45,6 +45,27 @@ The decoder progressively reduces feature depth while increasing spatial resolut
 - Each image has an annotation mask for segmentation, including three classes: pet, background, and boundary.
 - The dataset will be downloaded automatically by torchvision library
 
+# Folder Structure
+```sh
+.
+├───docs
+│   └───result
+├───model
+│   ├───conv_block.py
+│   ├───decoder.py
+│   ├───encoder.py
+│   └───unet.py
+├───output
+│   └───unet_logs
+├───pets_data
+│   └───oxford-iiit-pet
+│       ├───annotations
+│       │   ├───trimaps
+│       │   └───xmls
+│       └───images
+└───utils
+    └───__pycache__
+```
 # How to run
 
 + training
