@@ -63,8 +63,14 @@ The decoder progressively reduces feature depth while increasing spatial resolut
 │       │   ├───trimaps
 │       │   └───xmls
 │       └───images
-└───utils
-    └───__pycache__
+├───utils
+│   ├───display_pred.py
+│   ├───tensorboard.py
+│   └───utils.py
+├───check_hardware.py
+├───main.py
+├───README.md
+└───test.py
 ```
 # How to run
 
