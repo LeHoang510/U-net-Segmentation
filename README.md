@@ -111,5 +111,9 @@ The following figures compare the **model predictions** against the **expected r
 
 
 # Conclusion
+In this project, we implemented the U-Net model for pet image segmentation. The model was trained on a pet image dataset and was able to accurately segment objects in the images, such as dogs and cats.
+
+In summary, this project demonstrates the effectiveness of U-Net in image segmentation tasks while also highlighting potential directions for improvement to enhance accuracy and practical applications.
 
 # Future work
+The results can be improved by using more advanced models (such as DeepLabV3+ or Transformer-based models) and collecting a more diverse dataset to help the model generalize better.
